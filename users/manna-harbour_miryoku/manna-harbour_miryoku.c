@@ -53,8 +53,11 @@ MIRYOKU_LAYER_LIST
 
 const key_override_t capsword_key_override = ko_make_basic(MOD_MASK_SHIFT, CW_TOGG, KC_CAPS);
 
+const key_override_t double_quote_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_QUOT, UK_DQUO);
+
 const key_override_t **key_overrides = (const key_override_t *[]){
     &capsword_key_override,
+    &double_quote_key_override,
     NULL
 };
 
