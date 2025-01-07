@@ -28,8 +28,29 @@ KC_SCLN,           KC_4,              KC_5,              KC_6,              KC_E
 KC_GRV,            KC_1,              KC_2,              KC_3,              UK_BSLS,           U_NA,              TD(U_TD_U_NUM),    TD(U_TD_U_NAV),    KC_ALGR,           U_NA,              \
 U_NP,              U_NP,              KC_DOT,            KC_0,              KC_MINS,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
-#define GAME_COLEMAKDH \
+#define MIRYOKU_LAYER_GAME \
 KC_Q,              KC_W,              KC_F,              KC_P,              KC_B,              KC_J,              KC_L,              KC_U,              KC_Y,              KC_QUOT,           \
-KC_A,              KC_R,              KC_S,              KC_T,              KC_G,              KC_M,              KC_N,              KC_E,              KC_I,              KC_O,      \
-KC_Z,              KC_X,              KC_C,              KC_D,              KC_V,              KC_K,              KC_H,              KC_COMM,           KC_DOT,            KC_SLSH,\
-U_NP,              U_NP,              KC_ESC,            KC_SPC,            KC_TA,             KC_ENT,            KC_BSPC,           KC_DEL,            U_NP,              U_NP
+KC_A,              KC_R,              KC_S,              KC_T,              KC_G,              KC_M,              KC_N,              KC_E,              KC_I,              KC_O,              \
+KC_Z,              KC_X,              KC_C,              KC_D,              KC_V,              KC_K,              KC_H,              KC_COMM,           KC_DOT,            KC_SLSH,           \
+U_NP,              U_NP,              KC_ESC,            KC_SPC,            KC_TAB,            KC_ENT,            KC_BSPC,           KC_DEL,            U_NP,              U_NP
+
+#define MIRYOKU_LAYER_BASE \
+KC_Q,              KC_W,              KC_F,              KC_P,              KC_B,              KC_J,              KC_L,              KC_U,              KC_Y,              KC_QUOT,           \
+LGUI_T(KC_A),      LALT_T(KC_R),      LCTL_T(KC_S),      LSFT_T(KC_T),      KC_G,              KC_M,              LSFT_T(KC_N),      LCTL_T(KC_E),      LALT_T(KC_I),      LGUI_T(KC_O),      \
+LCTL_T(KC_Z),      ALGR_T(KC_X),      KC_C,              KC_D,              KC_V,              KC_K,              KC_H,              KC_COMM,           ALGR_T(KC_DOT),    LT(U_BUTTON,KC_SLSH),\
+U_NP,              U_NP,              LT(U_MEDIA,KC_ESC),LT(U_NAV,KC_SPC),  LT(U_MOUSE,KC_TAB),LT(U_SYM,KC_ENT),  LT(U_NUM,KC_BSPC), LT(U_FUN,KC_DEL),  U_NP,              U_NP
+
+#define MIRYOKU_LAYER_LIST      \
+    MIRYOKU_X(BASE, "Base")     \
+    MIRYOKU_X(EXTRA, "Extra")   \
+    MIRYOKU_X(TAP, "Tap")       \
+    MIRYOKU_X(BUTTON, "Button") \
+    MIRYOKU_X(NAV, "Nav")       \
+    MIRYOKU_X(MOUSE, "Mouse")   \
+    MIRYOKU_X(MEDIA, "Media")   \
+    MIRYOKU_X(NUM, "Num")       \
+    MIRYOKU_X(SYM, "Sym")       \
+    MIRYOKU_X(FUN, "Fun")       \
+    MIRYOKU_X(GAME, "Game")
+
+#define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING

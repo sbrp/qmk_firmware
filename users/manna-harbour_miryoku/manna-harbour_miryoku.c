@@ -64,7 +64,7 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 //use combo to toggle gaming layer
 const uint16_t PROGMEM game_combo[] = {KC_R, KC_S, KC_T, KC_N, KC_E, KC_I, COMBO_END};
 combo_t                key_combos[] = {
-    COMBO(game_combo, TG(GAME_COLEMAKDH)),
+    COMBO(game_combo, TG(U_GAME)),
 };
 
 // thumb combos
