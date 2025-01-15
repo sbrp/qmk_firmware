@@ -47,7 +47,7 @@ KC_Z,              KC_X,              KC_C,              KC_D,              KC_V
 U_NP,              U_NP,              LT(U_MEDIA,KC_ESC),KC_SPC,            KC_TAB,            LT(U_SYM,KC_ENT),  LT(U_NUM,KC_BSPC), LT(U_FUN,KC_DEL),  U_NP,              U_NP
 
 #define MIRYOKU_LAYER_BUTTON \
-U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             DF(U_BASE),        \
+U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             LGTM,              U_PST,             U_CPY,             U_CUT,             DF(U_BASE),        \
 KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NU,              U_NU,              KC_LSFT,           KC_LCTL,           KC_LALT,           DF(U_GAME),        \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             DF(U_QWERTY),      \
 U_NP,              U_NP,              KC_BTN3,           KC_BTN1,           KC_BTN2,           KC_BTN2,           KC_BTN1,           KC_BTN3,           U_NP,              U_NP

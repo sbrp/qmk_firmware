@@ -17,6 +17,22 @@ MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
 };
 
+enum custom_keycodes {
+    LGTM = SAFE_RANGE,
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LGTM:
+            if (record->event.pressed) {
+                SEND_STRING("LGTM!\n");
+            }
+            return false;
+    }
+
+    return true;
+}
+
 void u_td_fn_boot(tap_dance_state_t *state, void *user_data) {
   if (state->count == 2) {
     reset_keyboard();

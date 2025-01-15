@@ -15,16 +15,30 @@ void clicked(void) {
     tap_code(KC_MPLY);
 }
 
+// void turned(bool clockwise) {
+//     if (IS_LAYER_ON(6)) {
+//         tap_code(clockwise ? KC_VOLD : KC_VOLU);
+//         // tap_code(clockwise ? KC_VOLU : KC_VOLD);
+//     } else if (IS_LAYER_ON(3)) {
+//         tap_code16(clockwise ? LCTL(LSFT(KC_TAB)) : LCTL(KC_TAB));
+//         // tap_code16(clockwise ? LCTL(KC_TAB) : LCTL(LSFT(KC_TAB)));
+//     } else if (IS_LAYER_ON(5)) {
+//         tap_code16(clockwise ? LGUI(KC_Z) : LGUI(KC_Y));
+//         // tap_code16(clockwise ? LGUI(KC_Y) : LGUI(KC_Z));
+//     } else {
+//         tap_code16(clockwise ? KC_PGUP : KC_PGDN);
+//         // tap_code16(clockwise ? KC_PGDN : KC_PGUP);
+//     }
+// }
+
+// note that the number of the layer corresponds to users/manna-harbour_miryoku/custom_config.h
 void turned(bool clockwise) {
-    if (IS_LAYER_ON(6)) {
+    if (IS_LAYER_ON(8)) {
         tap_code(clockwise ? KC_VOLD : KC_VOLU);
         // tap_code(clockwise ? KC_VOLU : KC_VOLD);
-    } else if (IS_LAYER_ON(3)) {
+    } else if (IS_LAYER_ON(6)) {
         tap_code16(clockwise ? LCTL(LSFT(KC_TAB)) : LCTL(KC_TAB));
         // tap_code16(clockwise ? LCTL(KC_TAB) : LCTL(LSFT(KC_TAB)));
-    } else if (IS_LAYER_ON(5)) {
-        tap_code16(clockwise ? LGUI(KC_Z) : LGUI(KC_Y));
-        // tap_code16(clockwise ? LGUI(KC_Y) : LGUI(KC_Z));
     } else {
         tap_code16(clockwise ? KC_PGUP : KC_PGDN);
         // tap_code16(clockwise ? KC_PGDN : KC_PGUP);
