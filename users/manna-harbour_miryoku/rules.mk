@@ -8,7 +8,7 @@ TAP_DANCE_ENABLE = yes
 CAPS_WORD_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes
 # enabling combos in order to switch into gaming layer
-COMBO_ENABLE = yes
+# COMBO_ENABLE = yes
 
 INTROSPECTION_KEYMAP_C = manna-harbour_miryoku.c # keymaps
 
